@@ -1,0 +1,134 @@
+:root{
+
+
+
+  
+  --backgroundColor: #000000;
+  --backgroundColor2: #3E3636;
+  --textColor: #F5EDED;
+  --textColorLight: #D72323;
+  --rust: #B04325ff;
+
+
+  
+  
+}  
+
+div .about{
+    background-color: var(--backgroundColor2);
+    color: var(--rust);
+    width: 100%;
+    
+    
+}
+.home{
+    color: var(--rust);
+    width: 100%;
+    align-items: center;
+}
+
+.about{
+   
+    width: 100%;
+    padding: 1.5rem 2rem;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+}
+.about h2{
+    
+    background-color: var(--backgroundColor2);
+    font-size: 4.5rem;
+    margin: 1.5rem;
+}
+
+.prompt p{
+   background-color: var(--backgroundColor2);
+  font-size: 1.3rem;
+}
+
+div .prompt{
+    background-color: var(--backgroundColor2);
+}
+
+
+.about .prompt {
+    width: 40%;
+    font-size: 1.8rem;
+    
+  }
+
+.prompt svg{
+    background-color: var(--backgroundColor2);
+   border-radius: 5;
+    color: var(--rust);
+    margin: 1rem;
+  }
+
+
+
+div .skills{
+    background-color: var(--rust);
+  }
+.skills{
+  
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}  
+
+.skills h1{
+    font-size: 3.7rem;
+    margin: 1rem;
+    color: var(--textColor);
+    background-color: var(--rust);
+}
+.skills .list {
+    list-style: none;
+    background-color: var(--rust);
+  }
+
+.item{
+    margin: 1.5rem;
+    background-color: var(--rust);
+   
+}  
+
+.item h2{
+    color: var(--textColor);
+    background-color: var(--rust);
+}
+
+.item span{
+    color: var(--textColor);
+    background-color: var(--rust);
+}
+  
+  @media only screen and (max-width: 600px) {
+    .about h2 {
+      font-size: 40px;
+    }
+  
+    .about .prompt {
+      margin-top: 10px;
+      font-size: 20px;
+      width: 80%;
+    }
+  
+    .skills {
+      text-align: center;
+    }
+    .list {
+      padding: 0;
+    }
+  
+    .skills h2 {
+      font-size: 30px;
+    }
+  }

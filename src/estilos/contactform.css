@@ -1,0 +1,80 @@
+:root {
+ 
+  --backgroundColor: #000000;
+  --backgroundColor2: #3E3636;
+  --textColor: #F5EDED;
+  --textColorLight: #D72323;
+  --rust: #B04325ff;
+}
+
+
+form {
+  width: 450px;
+  margin: auto;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0.7rem 1.2rem;
+  border-radius: 1rem;
+  font-size: 1rem;
+  background-color: var(--rust);
+  /* background: rgba(0, 0, 0, 0.3); */
+}
+
+input,
+textarea {
+  width: 100%;
+  margin-bottom: 1.1rem;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  font-size: 1.3rem;
+  border: none;
+  background: var(--textColor);
+  outline: none;
+}
+
+textarea {
+  min-height: 100px;
+  max-height: 200px;
+  max-width: 100%;
+}
+
+label {
+  font-size: 1.3rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  background-color: var(--rust);
+  color: var(--backgroundColor2);
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+}
+
+
+
+input[type="submit"] {
+  margin: 1rem;
+  width: 30%;
+  cursor: pointer;
+  background: var(--backgroundColor2);
+  color: var(--textColorLight);
+  border: none;
+}
+
+@media only screen and (max-width: 1300px) {
+  form {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  form {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  form {
+    width: 100%;
+  }
+}

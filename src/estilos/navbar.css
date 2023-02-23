@@ -1,0 +1,111 @@
+:root{
+
+  /* Color */
+
+
+  
+  --backgroundColor: #000000;
+  --backgroundColor2: #3E3636;
+  --textColor: #F5EDED;
+  --textColorLight: #D72323;
+  --rust: #B04325ff;
+
+
+}  
+
+.navbar__div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    padding: 0 2rem;
+   
+    color: var(--textColor);
+  }
+  .navbar__enlace {
+  
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    background-color: var(--backgroundColor2);
+    color: var(--textColorLight);
+    text-decoration: none;  
+    border-radius: 0.5rem;
+    margin: 0 2rem;
+  }
+
+  .active{
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    color: var(--textColor);
+    background-color: var(--rust);
+    text-decoration: none;  
+    padding: 0.5rem;
+    margin: 0 2rem;
+  }
+  .navbar__enlace:hover{
+    color: var(--textColor);
+    background-color: var(--rust);      
+  }
+  
+  div .nav__btn{
+    padding: 5px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    background-color: var(--backgroundColor);
+    color: var(--textColor);
+    visibility: hidden;
+    opacity: 0;
+    font-size: 1.8rem;
+  }
+
+  div .nav__btn:hover{
+    color: var(--textColorLight);
+    
+  }
+
+  @media only screen and (max-width: 1024px) {
+    div .nav__btn{
+      visibility: visible;
+      opacity: 1;
+      color: var(--textColor);
+      background-color: var(--backgroundColor);
+
+    }
+  
+    div nav{
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1.5rem;
+      background-color: var(--backgroundColor);
+      transition: 0.8s;
+      transform: translateY(-100vh);
+    }
+  
+    div .responsive_nav{
+      transform: none;
+    }
+  
+    nav .nav__close__btn{
+      position: absolute;
+      top: 2rem;
+      right: 2rem;
+      
+     
+    }
+  
+    nav a{
+      font-size: 1.5rem;
+      background-color: var(--backgroundColor);
+    }
+    
+  }
+  

@@ -1,0 +1,42 @@
+
+:root {
+   
+  --backgroundColor: #000000;
+  --backgroundColor2: #3E3636;
+  --textColor: #F5EDED;
+  --textColorLight: #D72323;
+  --rust: #B04325ff;
+}
+  
+  .footer {
+    width: 100%;
+    height: 100%;
+    background: var(--backgroundColor2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   padding: 0.5rem;
+  
+    
+  }
+  
+  .form_container svg {
+    color: var(--textColorLight);
+    background-color: var(--backgroundColor2);
+   
+    
+    font-size: 4.5rem;
+    cursor: pointer;
+  }
+  
+  .footer p {
+    color: var(--textColorLight);
+    background-color: var(--backgroundColor2);
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .footer svg {
+      font-size: 4rem;
+    }
+  }
